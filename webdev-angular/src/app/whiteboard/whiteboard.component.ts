@@ -9,36 +9,10 @@ import {CourseServiceClient} from '../services/course.service.client';
 export class WhiteboardComponent implements OnInit {
 
 
-  courses = [];
-  selectedCourse = {};
-  selectedModule = {};
-  selectedLesson = {};
-  selectedTopic = {};
-
-  constructor(private courseService: CourseServiceClient) {
-  }
-
-  selectCourse(course) {
-    this.selectedCourse = course;
-  }
-
-  selectModule(module) {
-    this.selectedModule = module;
-  }
-
-  selectLesson(lesson) {
-    this.selectedLesson = lesson;
-  }
-
-
-  selectTopic(topic) {
-    this.selectedTopic = topic;
+  constructor() {
   }
 
 
   ngOnInit() {
-    this.courseService
-      .findAllCourses()
-      .then(courses => this.courses = courses);
   }
 }
