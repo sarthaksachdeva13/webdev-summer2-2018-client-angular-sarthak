@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {CourseServiceClient} from '../services/course.service.client';
 
 @Component({
   selector: 'app-whiteboard',
