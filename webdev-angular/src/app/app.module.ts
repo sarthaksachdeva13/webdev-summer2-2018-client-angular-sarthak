@@ -13,6 +13,13 @@ import { ProfileComponent } from './profile/profile.component';
 import {UserServiceClient} from './services/user.service.client';
 import { SectionsComponent } from './sections/sections.component';
 import {SectionServiceClient} from './services/section.service.client';
+import { EnrollmentComponent } from './enrollment/enrollment.component';
+import { CourseGridComponent } from './course-grid/course-grid.component';
+import { CourseViewerComponent } from './course-viewer/course-viewer.component';
+import { ModuleListComponent } from './module-list/module-list.component';
+import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
+import { SectionListComponent } from './section-list/section-list.component';
+import { TopicPillsComponent } from './topic-pills/topic-pills.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +29,14 @@ import {SectionServiceClient} from './services/section.service.client';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    SectionsComponent
+    SectionsComponent,
+    EnrollmentComponent,
+    CourseGridComponent,
+    CourseViewerComponent,
+    ModuleListComponent,
+    LessonTabsComponent,
+    SectionListComponent,
+    TopicPillsComponent
   ],
   imports: [
     BrowserModule,

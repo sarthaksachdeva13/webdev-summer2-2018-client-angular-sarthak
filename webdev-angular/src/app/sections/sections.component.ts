@@ -10,6 +10,7 @@ import {SectionServiceClient} from '../services/section.service.client';
 export class SectionsComponent implements OnInit {
 
   courses = [];
+  sections = [];
   selectedCourse = {
     id: -1
   };
@@ -18,13 +19,22 @@ export class SectionsComponent implements OnInit {
   constructor(private sectionService: SectionServiceClient, private courseService: CourseServiceClient) {
   }
 
-  selectCourse = course =>
-    this.selectedCourse = course
+  selectCourse = course => {
+    this.selectedCourse = course;
+    this.sectionService
+      .findSectionsForCourse(course.id)
+      .then(sections => this.sections = sections);
+  }
 
   addSection = section => {
-    console.log(section);
     section.courseId = this.selectedCourse.id;
-    this.sectionService.createSection(section);
+    this.sectionService
+      .createSection(section)
+      .then(() => {
+        return this.sectionService
+          .findSectionsForCourse(this.selectedCourse.id);
+      })
+      .then(sections => this.sections = sections);
   }
 
   ngOnInit() {
