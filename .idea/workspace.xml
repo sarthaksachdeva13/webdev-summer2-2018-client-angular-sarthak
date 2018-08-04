@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1037e043-d6ab-416b-9162-05957a94a61c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,44 +26,44 @@
     <session id="939412497">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="3" />
-          <entry key="TsLintLanguageService" value="2" />
+          <entry key="Angular2LanguageService" value="4" />
+          <entry key="TsLintLanguageService" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="4" />
-          <entry key="html" value="11" />
-          <entry key="ts" value="25" />
+          <entry key="css" value="7" />
+          <entry key="html" value="14" />
+          <entry key="ts" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="11" />
-          <entry key="TypeScript" value="25" />
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="14" />
+          <entry key="TypeScript" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="55" />
-          <entry key="html" value="1134" />
-          <entry key="ts" value="1578" />
+          <entry key="css" value="113" />
+          <entry key="html" value="1165" />
+          <entry key="ts" value="1617" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="55" />
-          <entry key="HTML" value="1134" />
-          <entry key="TypeScript" value="1578" />
+          <entry key="CSS" value="113" />
+          <entry key="HTML" value="1165" />
+          <entry key="TypeScript" value="1617" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +73,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="435">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -78,67 +94,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="197">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.html">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/course.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -149,12 +145,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.routing.ts">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="105">
+              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,26 +181,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/webdev-angular/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/index.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/services/course.service.client.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.ts" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/login/login.component.css" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/login/login.component.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.css" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/index.html" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.css" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.html" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.ts" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts" />
       </list>
     </option>
   </component>
@@ -258,7 +267,15 @@
               <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="enrollment" type="462c0819:PsiDirectoryNode" />
+              <item name="course-grid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
+              <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="course-navigator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
@@ -316,17 +333,19 @@
       <updated>1533155106332</updated>
       <workItem from="1533155107619" duration="7290000" />
       <workItem from="1533303254007" duration="2000" />
-      <workItem from="1533313405801" duration="14693000" />
+      <workItem from="1533313405801" duration="15692000" />
+      <workItem from="1533420570098" duration="2510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21985000" />
+    <option name="totallyTimeSpent" value="25494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23749119" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23749119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -339,7 +358,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32962447" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36856747" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32962447" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -359,30 +378,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/login/login.component.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -434,9 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -448,27 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -494,18 +466,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts">
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/course.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -518,41 +508,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.ts">
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="33" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts">
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="495">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="197">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/course.service.client.ts">
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="435">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/user.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
         </state>
       </provider>
     </entry>

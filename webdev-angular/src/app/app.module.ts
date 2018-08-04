@@ -18,7 +18,6 @@ import { CourseGridComponent } from './course-grid/course-grid.component';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
-import { SectionListComponent } from './section-list/section-list.component';
 import { TopicPillsComponent } from './topic-pills/topic-pills.component';
 
 @NgModule({
@@ -35,7 +34,6 @@ import { TopicPillsComponent } from './topic-pills/topic-pills.component';
     CourseViewerComponent,
     ModuleListComponent,
     LessonTabsComponent,
-    SectionListComponent,
     TopicPillsComponent
   ],
   imports: [
