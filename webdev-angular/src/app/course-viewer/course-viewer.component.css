@@ -10,3 +10,13 @@ a:hover.nav-item-link {
   color: white;
   cursor: pointer;
 }
+
+h4 {
+  font-size: 20px;
+  color: white;
+}
+
+.fas
+{
+margin-left: 10px;
+}
