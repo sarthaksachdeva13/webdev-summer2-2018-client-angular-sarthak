@@ -19,6 +19,7 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
 import { TopicPillsComponent } from './topic-pills/topic-pills.component';
+import {ModuleServiceClient} from './services/module.service.client';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { TopicPillsComponent } from './topic-pills/topic-pills.component';
   providers: [
     CourseServiceClient,
     UserServiceClient,
-    SectionServiceClient
+    SectionServiceClient,
+    ModuleServiceClient
   ],
   bootstrap: [AppComponent]
 })

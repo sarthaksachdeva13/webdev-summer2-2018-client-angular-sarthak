@@ -1,4 +1,16 @@
 
-.loginPage{
+h2 {
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.btn
+{
+  border-radius: 20px;
+}
+.regLink{
+  margin-left: 15px;
 }

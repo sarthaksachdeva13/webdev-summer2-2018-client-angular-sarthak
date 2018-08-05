@@ -4,15 +4,20 @@ import {Injectable} from '@angular/core';
 export class UserServiceClient {
 
 
-  login = (user) =>
-    fetch('http://localhost:3000/login', {
+  login (username, password) {
+    const credentials = {
+      username: username,
+      password: password
+    };
+    return fetch('http://localhost:3000/login', {
       method: 'post',
       credentials: 'include',
       headers: {
         'content-type': 'application/json'
       },
-      body: JSON.stringify(user)
-    })
+      body: JSON.stringify(credentials)
+    });
+  }
 
 
   updateUser(user) {
@@ -48,7 +53,6 @@ export class UserServiceClient {
       })
       .then(response => response.json());
   }
-
 
 
   createUser(username, password) {

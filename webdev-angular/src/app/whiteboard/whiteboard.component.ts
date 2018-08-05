@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import {UserServiceClient} from '../services/user.service.client';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-whiteboard',
@@ -11,7 +11,6 @@ export class WhiteboardComponent implements OnInit {
 
 
   isLoggedIn = false;
-
 
   constructor(private service: UserServiceClient, private router: Router) {
   }
@@ -25,7 +24,11 @@ export class WhiteboardComponent implements OnInit {
   ngOnInit() {
     this.service.authenticate()
       .then(response => {
-        this.isLoggedIn = response.username !== undefined && response.username !== '';
+        if (response.username !== undefined && response.username !== '') {
+          this.isLoggedIn = true;
+        } else {
+          this.isLoggedIn = false;
+        }
       });
   }
 }
