@@ -23,6 +23,7 @@ import {ModuleServiceClient} from './services/module.service.client';
 import {LessonServiceClient} from './services/lesson.service.client';
 import {TopicServiceClient} from './services/topic.service.client';
 import { WidgetListComponent } from './widget-list/widget-list.component';
+import {WidgetServiceClient} from './services/widget.service.client';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { WidgetListComponent } from './widget-list/widget-list.component';
     SectionServiceClient,
     ModuleServiceClient,
     LessonServiceClient,
-    TopicServiceClient
+    TopicServiceClient,
+    WidgetServiceClient
   ],
   bootstrap: [AppComponent]
 })

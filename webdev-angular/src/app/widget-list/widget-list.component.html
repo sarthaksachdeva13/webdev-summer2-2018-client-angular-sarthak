@@ -1,3 +1,69 @@
-<p>
-  widget-list works!
-</p>
+<ul class="list-group">
+  <li *ngFor="let widget of widgets" class="list-group-item border-1 border-secondary">
+    <div class="container my-3" [ngSwitch]="widget.widgetType">
+      <div class="row" *ngSwitchCase="'HeadingWidget'">
+        <div class="col-md-12">
+          <div class="form-group" [ngSwitch]="widget.size">
+            <h1 *ngSwitchCase="'1'">{{widget.text}}</h1>
+            <h2 *ngSwitchCase="'2'">{{widget.text}}</h2>
+            <h3 *ngSwitchCase="'3'">{{widget.text}}</h3>
+            <h4 *ngSwitchCase="'4'">{{widget.text}}</h4>
+            <h5 *ngSwitchCase="'5'">{{widget.text}}</h5>
+            <h6 *ngSwitchCase="'6'">{{widget.text}}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngSwitchCase="'LinkWidget'">
+        <div class="col-md-12">
+          <div class="form-group my-auto">
+            <a href={{widget.href}}>{{widget.text}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngSwitchCase="'ImageWidget'">
+        <div class="col-md-12">
+          <div class="form-group">
+            <div class="col-md-2">
+              <img src={{widget.src}}/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngSwitchCase="'ListWidget'">
+        <div class="col-md-12" [ngSwitch]="widget.listType">
+          <ol *ngSwitchCase="'ordered'">
+            <li *ngFor="let text of orderedListItems">
+              {{text}}
+            </li>
+          </ol>
+          <ul *ngSwitchCase="'unordered'">
+            <li *ngFor="let text of unorderedListItems">
+              {{text}}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" *ngSwitchCase="'exam'">
+        <div class="col-md-12">
+          <h5>{{widget.name}}</h5>
+        </div>
+      </div>
+      <div class="row" *ngSwitchCase="'assignment'">
+        <div class="col-md-12">
+          <div class="d-flex">
+            <div class="pr-2">
+              <h5>{{widget.title}}</h5>
+            </div>
+            <div class="ml-auto">
+              <h5 class="float-right">pts. &nbsp;{{widget.points}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngSwitchCase="'ParagraphWidget'">
+        <p class="text-dark">{{widget.text}}</p>
+      </div>
+    </div>
+  </li>
+
+</ul>

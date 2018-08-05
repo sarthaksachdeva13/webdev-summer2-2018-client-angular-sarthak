@@ -31,6 +31,7 @@ export class TopicPillsComponent implements OnInit {
   }
 
   loadTopics(courseId, moduleId, lessonId) {
+    this.lessonId = lessonId;
     this.service.findAllTopicsForLesson(courseId, moduleId, lessonId)
       .then(topics => this.topics = topics);
   }
