@@ -9,15 +9,17 @@ import {UserServiceClient} from '../services/user.service.client';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private router: Router,
-              private service: UserServiceClient) {
-  }
+
   username;
   password;
   password2;
   invalid;
 
-  validatePassword(password2){
+
+  constructor(private router: Router, private service: UserServiceClient) {
+  }
+
+  validatePassword(password2) {
     this.invalid = !this.password.includes(password2);
   }
 
@@ -25,18 +27,17 @@ export class RegisterComponent implements OnInit {
     if (password === password2) {
       this.service
         .createUser(username, password)
-        .then((response) => {
-          return response.json();
-        }).then(response => {
-        if (response.message !== undefined) {
-          alert(response.message);
-        } else {
-          this.router.navigate(['profile']);
-        }
-      });
+        .then(response => response.json())
+        .then(response => {
+          if (response.message !== undefined) {
+            alert(response.message);
+          } else {
+            this.router.navigate(['profile']);
+          }
+        });
     } else {
       this.invalid = true;
-      alert('Passwords do not match');
+      alert('Passwords don\'t match');
     }
   }
 

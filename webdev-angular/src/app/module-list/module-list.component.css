@@ -1,28 +1,30 @@
-.mod-link a {
-  color: white ;
+.moduleHeading
+{
+  font-family: 'Poiret One', cursive;
+  color: rgb(102,51,153);
+  font-size: 30px;
+  background-color: rgb(255,228,225);
+  font-weight: bold;
+  text-align: center;
+
 }
 
-.active.wbdv a {
+.liSelected{
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
+}
+
+
+.list-group-item.liSelected{
+  background-color: rgb(95,158,160);
+}
+
+.liSelected a{
   color: white;
-}
-
-.bg-active {
-  background-color: #343a40;
-  border-color:#343a40;
-}
-
-.list-group-item.sel-li{
-  background-color: #343a40;
-  border-color:#343a40;
-  color:white!important;
-}
-.sel-li a {
-  color: white;
-  font-family: "Lucida Console";
   font-weight: bolder;
 }
 
 a {
-  color:#343a40;
+  color: rgb(128,0,0);
   font-weight: bold;
 }

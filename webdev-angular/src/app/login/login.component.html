@@ -19,11 +19,16 @@
       </div>
       <div id="container" class="form-group">
         <button (click)="login(username, password)"
-                class="btn btn-primary btn-block">
+                class="btn btn-info btn-block">
           Submit
         </button>
       </div>
       <span>Not yet registered?</span><a class="nav-item-link regLink" routerLink="/register">Sign Up</a>
+      <div id="homeLink">
+        <a class="nav-item-link" routerLink="/home">
+          <i class="fa-2x fa fa-home"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>

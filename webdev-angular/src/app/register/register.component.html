@@ -9,21 +9,35 @@
       <div class="form-group">
         <input type="text"
                class="form-control"
-               placeholder="Username"
-               [(ngModel)]="username" required>
+               placeholder="Enter a username"
+               [(ngModel)]="username" required/>
       </div>
       <div class="form-group">
         <input type="password"
                class="form-control"
-               placeholder="Password" [(ngModel)]="password">
+               placeholder="Enter a password"
+               [(ngModel)]="password"/>
+      </div>
+      <div class="form-group">
+        <input type="password"
+               placeholder="Re-enter a password"
+               [(ngModel)]="password2"
+               class="form-control"
+               [ngClass]="{'border-danger': invalid == true}"
+               (ngModelChange)="validatePassword(password2)"/>
       </div>
       <div id="container" class="form-group">
         <button (click)="register(username, password, password2)"
-                class="btn btn-primary btn-block">
+                class="btn btn-info btn-block">
           Submit
         </button>
       </div>
-      <span>Not yet with us?</span><a class="nav-item-link regLink" routerLink="/register">Register</a>
+      <span>Already registered?</span><a class="nav-item-link regLink" routerLink="/login">Log in</a>
+      <div id="homeLink">
+        <a class="nav-item-link" routerLink="/home">
+          <i class="fa-2x fa fa-home"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>

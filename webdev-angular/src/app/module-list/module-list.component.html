@@ -1,11 +1,13 @@
 <div class="row mb-4">
-  <div class="col-md-4 pb-2">
+  <div class="col-md-4">
     <ul class="list-group">
-      <li class="list-group-item bg-active"><span class="text-light font-weight-bold">Modules</span></li>
-      <li [ngClass]="{'sel-li': module.id == moduleId}"
+      <li class="list-group-item moduleHeading">
+        Modules
+      </li>
+      <li [ngClass]="{'liSelected': module.id == moduleId}"
           *ngFor="let module of modules"
           class="list-group-item">
-        <a class="sel-li" routerLink="/course/{{courseId}}/module/{{module.id}}">
+        <a class="liSelected" routerLink="/course/{{courseId}}/module/{{module.id}}">
           {{module.title}}</a>
       </li>
     </ul>
