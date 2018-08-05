@@ -11,41 +11,26 @@ export class WidgetListComponent implements OnInit {
 
   constructor(private service: WidgetServiceClient,
               private route: ActivatedRoute) {
-    this.route.params.subscribe(params => this.setContext(params));
+    this.route.params.subscribe(params => this.setParams(params));
   }
 
   context;
+  topicId;
   widgets = [];
-  orderedListItems = [];
-  unorderedListItems = [];
 
-  setContext(params) {
+  setParams(params) {
     this.context = params;
-    this.loadWidgets(params.topicId);
+    this.topicId = params['topicId'];
+    this.loadWidgets(this.topicId);
   }
 
   loadWidgets(topicId) {
     this.service.findWidgetsForTopic(topicId)
-      .then(widgets => this.widgets = widgets)
-      .then((widgets) => {
-        if (this.widgets.length > 0) {
-          widgets.map(widget => {
-            if (widget.widgetType === 'ListWidget') {
-              if (widget.listType === 'ordered') {
-                this.orderedListItems = widget.listItems.split(' ');
-                console.log(this.orderedListItems);
-              } else {
-                this.unorderedListItems = widget.listItems.split(' ');
-                console.log(this.unorderedListItems);
-              }
-            }
-          });
-        }
-      });
+      .then(widgets => this.widgets = widgets);
+
   }
 
   ngOnInit() {
-
   }
 
 }

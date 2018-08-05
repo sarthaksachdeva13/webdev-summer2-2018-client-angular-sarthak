@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg nav-tabs pt-2">
   <ul class="nav nav-tabs">
     <li *ngFor="let lesson of lessons"
-        class="nav-item">
-      <a class="nav-link"
-         [ngClass]="{'liSelected': lesson.id == lessonId}"
+        class="nav-item"
+        [ngClass]="{'liSelected': lesson.id == lessonId}">
+      <a class="nav-link liSelected"
          routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lesson.id}}">
         {{lesson.title}}
       </a>
