@@ -26,16 +26,16 @@ export class SectionsComponent implements OnInit {
       .then(sections => this.sections = sections);
   }
 
-  addSection = section => {
-    section.courseId = this.selectedCourse.id;
-    this.sectionService
-      .createSection(section)
-      .then(() => {
-        return this.sectionService
-          .findSectionsForCourse(this.selectedCourse.id);
-      })
-      .then(sections => this.sections = sections);
-  }
+  // addSection = section => {
+  //   section.courseId = this.selectedCourse.id;
+  //   this.sectionService
+  //     .createSection(section)
+  //     .then(() => {
+  //       return this.sectionService
+  //         .findSectionsForCourse(this.selectedCourse.id);
+  //     })
+  //     .then(sections => this.sections = sections);
+  // }
 
   ngOnInit() {
     this.courseService.findAllCourses()

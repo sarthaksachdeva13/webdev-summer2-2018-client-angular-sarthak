@@ -1,1 +1,124 @@
-<h2>Welcome {{currentUser.username}}</h2>
+<header class="navbar navbar-expand-lg bg-dark">
+  <a class="navbar-brand text-light" href="home">Whiteboard</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item" [hidden]="!isAdmin">
+      <a class="btn btn-link nav-link nav-item-link" routerLink="/admin"><span
+        class="font-weight-bold">Admin Console</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-link nav-link nav-item-link" (click)="logout()">Logout<i class="fas fa-sign-out-alt"></i></a>
+    </li>
+  </ul>
+</header>
+<div class="container-fluid justify-content-center pageContainer">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="container profileContainer">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>Profile</h2>
+                <form>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input [(ngModel)]="username"
+                             class="form-control"
+                             [ngModelOptions]="{standalone: true}"
+                             disabled="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="password"
+                             [(ngModel)]="password"
+                             class="form-control"
+                             placeholder="Enter new password"
+                             [ngModelOptions]="{standalone: true}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input [(ngModel)]="firstName"
+                             class="form-control"
+                             placeholder="First Name"
+                             [ngModelOptions]="{standalone: true}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input [(ngModel)]="lastName" class="form-control"
+                             placeholder="Last Name"
+                             [ngModelOptions]="{standalone: true}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text"
+                             [(ngModel)]="phone"
+                             class="form-control"
+                             placeholder="(617)xxx-xxxx"
+                             [ngModelOptions]="{standalone: true}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="email"
+                             [(ngModel)]="email"
+                             class="form-control"
+                             placeholder="Email"
+                             [ngModelOptions]="{standalone: true}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input [(ngModel)]="address" class="form-control"
+                             placeholder="Address"
+                             [ngModelOptions]="{standalone: true}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <button type="button" class="btn btn-success" (click)="update()">
+                        Update
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="container courseContainer">
+        <div class="row col-lg-12 mb-4">
+          <h2>Courses and Sections</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-group pb-4">
+                <li class="list-group-item" *ngFor="let course of enrolledCourses">
+                  <h5><a class="nav-item-link text-dark"
+                         routerLink="/course/{{course.id}}">{{course.title}}</a>
+                  </h5>
+                  <ul class="list-group" *ngFor="let enrollment of sections">
+                    <li
+                      class="list-group-item border-top-1 border-bottom-0 border-left-0 border-right-0"
+                      *ngIf="enrollment.section.courseId == course.id">
+                      <div class="offset-1  font-weight-light">
+                        <i class="fa fa-arrow-right ml-0 pr-2"></i>{{enrollment.section.name}}
+                        ({{enrollment.section.availableSeats}}/{{enrollment.section.seats}})
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

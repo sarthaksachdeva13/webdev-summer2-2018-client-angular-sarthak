@@ -2,12 +2,12 @@
   <div class="row my-3">
     <div *ngFor="let topic of topics" class="d-inline mr-1">
       <a [ngClass]="{'liSelected':topic.id == topicId}"
-         class="my-auto p-2 disabled"
+         class="my-auto p-2 disabled liSelected"
          routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lessonId}}/topic/{{topic.id}}">
         {{topic.title}}</a>
     </div>
   </div>
-  <div class="row">
+  <div class="row widgetClass">
     <div class="col-md-12">
       <app-widget-list></app-widget-list>
     </div>

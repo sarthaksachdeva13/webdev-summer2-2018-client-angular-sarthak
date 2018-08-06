@@ -2,6 +2,7 @@
   background-color: rgb(95,158,160);
   color: black !important;
   font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
 
 }
 
@@ -11,10 +12,17 @@
   border-radius: 14px;
   background-color: rgb(95,158,160);
   font-weight: bolder;
+  font-size: 20px;
 }
 
 a {
+  font-size: 20px;
+  font-family: 'Love Ya Like A Sister', cursive;
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+.widgetClass{
+  margin-top: 65px;
 }

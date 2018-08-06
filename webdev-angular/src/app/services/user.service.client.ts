@@ -4,12 +4,12 @@ import {Injectable} from '@angular/core';
 export class UserServiceClient {
 
 
-  login (username, password) {
+  login  (username, password) {
     const credentials = {
       username: username,
       password: password
     };
-    return fetch('http://localhost:3000/login', {
+    return fetch('http://localhost:3000/api/login', {
       method: 'post',
       credentials: 'include',
       headers: {

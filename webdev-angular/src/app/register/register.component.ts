@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
   invalid;
 
 
-  constructor(private router: Router, private service: UserServiceClient) {
+  constructor(private router: Router, private userService: UserServiceClient) {
   }
 
   validatePassword(password2) {
@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
 
   register(username, password, password2) {
     if (password === password2) {
-      this.service
+      this.userService
         .createUser(username, password)
         .then(response => response.json())
         .then(response => {

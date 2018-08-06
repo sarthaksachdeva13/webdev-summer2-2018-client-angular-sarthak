@@ -1,13 +1,12 @@
 .nav-item.liSelected {
   background-color: rgb(95,158,160);
   color: black !important;
-  border-radius: 7px;
 }
 
 .liSelected {
   font-family: 'Love Ya Like A Sister', cursive;
   font-size: 20px;
-
+border-color: darkblue;
 }
 
 .liSelected a {

@@ -1,0 +1,49 @@
+.nav-item-link {
+  color: white;
+}
+
+a.nav-item-link {
+  color: white;
+}
+
+a:hover.nav-item-link{
+  color: white;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: rgb(102,51,153);
+}
+
+.fas
+{
+  margin-left: 10px;
+}
+
+.btn-success{
+  border-radius: 15px;
+  width: 50%;
+  margin-left: 150px;
+}
+.profileContainer{
+
+  margin-top : 20px;
+}
+
+.courseContainer{
+  margin-top : 20px;
+  margin-bottom : 4px;
+  margin-left: 200px;
+
+}
+
+
+.pageContainer
+{
+  /*background: url("http://blog.somethingpeach.com/wp-content/uploads/wallpaper_007_2560x1440.jpg");*/
+}
