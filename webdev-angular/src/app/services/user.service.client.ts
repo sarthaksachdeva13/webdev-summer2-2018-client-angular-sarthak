@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 export class UserServiceClient {
 
 
-  login  (username, password) {
+  login = (username, password) => {
     const credentials = {
       username: username,
       password: password
@@ -20,8 +20,8 @@ export class UserServiceClient {
   }
 
 
-  updateUser(user) {
-    return fetch('http://localhost:3000/api/user/update', {
+  updateUser = user =>
+    fetch('http://localhost:3000/api/user/update', {
       method: 'PUT',
       credentials: 'include',
       body: JSON.stringify(user),
@@ -29,8 +29,7 @@ export class UserServiceClient {
         'content-type': 'application/json'
       }
     })
-      .then(response => response.json());
-  }
+      .then(response => response.json())
 
 
   currentUser = () =>
@@ -39,23 +38,20 @@ export class UserServiceClient {
     }).then(response => response.json())
 
 
-  logout() {
-    return fetch('http://localhost:3000/api/logout', {
+  logout = () =>
+    fetch('http://localhost:3000/api/logout', {
       method: 'post',
       credentials: 'include'
-    });
-  }
-
-  profile() {
-    return fetch('http://localhost:3000/api/profile',
-      {
-        credentials: 'include',
-      })
-      .then(response => response.json());
-  }
+    })
 
 
-  createUser(username, password) {
+  profile = () =>
+    fetch('http://localhost:3000/api/profile', {
+      credentials: 'include',
+    }).then(response => response.json())
+
+
+  createUser = (username, password) => {
     const user = {
       username: username,
       password: password
@@ -70,11 +66,9 @@ export class UserServiceClient {
     });
   }
 
-  authenticate() {
-    return fetch('http://localhost:3000/api/auth', {
+  authenticate = () =>
+    fetch('http://localhost:3000/api/auth', {
       credentials: 'include'
-    }).then(response => (response.json()));
-  }
-
+    }).then(response => (response.json()))
 
 }

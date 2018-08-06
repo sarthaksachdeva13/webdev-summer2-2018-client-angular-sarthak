@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {CourseServiceClient} from '../services/course.service.client';
 import {SectionServiceClient} from '../services/section.service.client';
+import {UserServiceClient} from '../services/user.service.client';
+import {Course} from '../models/course.model.client';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-sections',
@@ -9,37 +12,82 @@ import {SectionServiceClient} from '../services/section.service.client';
 })
 export class SectionsComponent implements OnInit {
 
-  courses = [];
+  constructor(private sectionService: SectionServiceClient,
+              private router: Router,
+              private authService: UserServiceClient,
+              private courseService: CourseServiceClient,
+              private route: ActivatedRoute) {
+    this.route.params.subscribe(params => this.loadSections(params['courseId']));
+  }
+
+  isAdmin = false;
+  sectionName = '';
+  seats = 0;
+  courseId = '';
   sections = [];
-  selectedCourse = {
-    id: -1
-  };
-  section = {};
+  course = new Course();
 
-  constructor(private sectionService: SectionServiceClient, private courseService: CourseServiceClient) {
+  findCourseById(courseId) {
+    this.courseService.findCourseById(courseId)
+      .then(course => this.course = course);
   }
 
-  selectCourse = course => {
-    this.selectedCourse = course;
+  loadSections(courseId) {
+    this.courseId = courseId;
+    this
+      .sectionService
+      .findSectionsForCourse(courseId)
+      .then(sections => this.sections = sections)
+      .then(() => this.findCourseById(courseId));
+  }
+
+  logout() {
+    this.authService.logout()
+      .then(() =>
+        this.router.navigate(['login']));
+  }
+
+  createSection(sectionName, seats) {
+    if (sectionName === '' && this.course !== undefined) {
+      sectionName = this.course.title + ' Section 1';
+    }
+    if (seats === 0) {
+      seats = 20;
+    }
+    this
+      .sectionService
+      .createSection(this.courseId, sectionName, seats)
+      .then(() => {
+        this.loadSections(this.courseId);
+      });
+  }
+
+  enroll(section) {
     this.sectionService
-      .findSectionsForCourse(course.id)
-      .then(sections => this.sections = sections);
+      .enrollStudentInSection(section._id)
+      .then(() => (
+        this.loadSections(this.courseId)));
   }
 
-  // addSection = section => {
-  //   section.courseId = this.selectedCourse.id;
-  //   this.sectionService
-  //     .createSection(section)
-  //     .then(() => {
-  //       return this.sectionService
-  //         .findSectionsForCourse(this.selectedCourse.id);
-  //     })
-  //     .then(sections => this.sections = sections);
-  // }
+  deEnroll(section) {
+    console.log(section);
+    this.sectionService.deEnroll(section._id)
+      .then(() => (
+        this.loadSections(this.courseId)));
+  }
 
   ngOnInit() {
-    this.courseService.findAllCourses()
-      .then(courses => this.courses = courses);
+    this.authService.authenticate()
+      .then(user => {
+        if (user.username !== undefined && user.username !== '') {
+          if (user.username === 'admin') {
+            this.isAdmin = true;
+            console.log('user: ' + user.username);
+          }
+        } else {
+          this.router.navigate(['register']);
+        }
+      });
   }
 
 }

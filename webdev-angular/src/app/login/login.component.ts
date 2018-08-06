@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     this.service
       .login(username, password)
       .then(user =>
-        this.router.navigate(['profile']));
+        this.router.navigate(['profile']), response => alert('Not found!'));
   }
 
   constructor(private router: Router,

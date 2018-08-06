@@ -9,6 +9,20 @@ export class SectionServiceClient {
       credentials: 'include'
     })
 
+
+  deEnroll = sectionId =>
+    fetch('http://localhost:3000/api/section/' + sectionId + '/deRegister', {
+      method: 'DELETE',
+      credentials: 'include',
+    })
+
+
+  enrollStudentInSection = sectionId =>
+    fetch('http://localhost:3000/api/section/' + sectionId + '/enrollment', {
+      method: 'post',
+      credentials: 'include'
+    })
+
   findAllSections = () =>
     fetch('http://localhost:3000/api/section')
       .then(response => response.json())
@@ -54,17 +68,5 @@ export class SectionServiceClient {
       }
     }).then((response => response.json()));
   }
-
-  enrollStudentInSection = (sectionId) =>
-    fetch('http://localhost:3000/api/section/' + sectionId + '/enrollment', {
-      method: 'post',
-      credentials: 'include'
-    })
-
-  deEnroll = (sectionId) =>
-    fetch('http://localhost:4000/api/section/' + sectionId + '/deRegister', {
-      method: 'DELETE',
-      credentials: 'include',
-    })
 
 }
