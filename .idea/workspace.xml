@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1037e043-d6ab-416b-9162-05957a94a61c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -105,20 +100,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="150">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdev-angular/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -240,9 +235,9 @@
         <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" />
-        <option value="$PROJECT_DIR$/webdev-angular/package.json" />
         <option value="$PROJECT_DIR$/webdev-angular/.gitignore" />
         <option value="$PROJECT_DIR$/webdev-angular/server.js" />
+        <option value="$PROJECT_DIR$/webdev-angular/package.json" />
       </list>
     </option>
   </component>
@@ -328,12 +323,12 @@
       <workItem from="1533155107619" duration="7290000" />
       <workItem from="1533303254007" duration="2000" />
       <workItem from="1533313405801" duration="15692000" />
-      <workItem from="1533420570098" duration="56923000" />
+      <workItem from="1533420570098" duration="56996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79907000" />
+    <option name="totallyTimeSpent" value="79980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="0" />
@@ -714,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -734,7 +722,14 @@
     <entry file="file://$PROJECT_DIR$/webdev-angular/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
