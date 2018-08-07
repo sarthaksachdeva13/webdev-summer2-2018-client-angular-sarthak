@@ -6,3 +6,43 @@ h2 {
   margin-bottom: 50px;
   color: rgb(102,51,153);
 }
+
+h3{
+  margin-top: 100px;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+a:hover {
+  cursor:pointer;
+}
+
+a.nav-item-link, a{
+  color: white;
+}
+
+.list-group-item{
+  border-radius: 20px;
+  margin : 5px;
+
+}
+
+
+.list-group-item:hover{
+  cursor:pointer;
+
+}
+
+.fas
+{
+  margin-left: 5px;
+}
+
+.btn{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card{
+  border-radius: 20px;
+}

@@ -1,3 +1,45 @@
-.btn{
+.btn {
+  width: 50%;
+  margin-left: 100px;
   border-radius: 20px;
+}
+
+a.nav-item-link {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover.nav-item-link {
+  color: white;
+  cursor: pointer;
+}
+
+.fas {
+  margin-left: 10px;
+}
+
+.list-group-item {
+  border-radius: 20px;
+  background-color: rgb(240, 255, 255);
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: rgb(102, 51, 153);
+}
+
+.form-control {
+  border-radius: 20px;
+}
+
+.btn-danger{
+  margin-top: 5px;
 }

@@ -13,7 +13,6 @@ import { ProfileComponent } from './profile/profile.component';
 import {UserServiceClient} from './services/user.service.client';
 import { SectionsComponent } from './sections/sections.component';
 import {SectionServiceClient} from './services/section.service.client';
-import { EnrollmentComponent } from './enrollment/enrollment.component';
 import { CourseGridComponent } from './course-grid/course-grid.component';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
 import { ModuleListComponent } from './module-list/module-list.component';
@@ -35,7 +34,6 @@ import { AdminComponent } from './admin/admin.component';
     RegisterComponent,
     ProfileComponent,
     SectionsComponent,
-    EnrollmentComponent,
     CourseGridComponent,
     CourseViewerComponent,
     ModuleListComponent,

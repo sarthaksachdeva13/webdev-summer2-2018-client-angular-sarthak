@@ -1,76 +1,87 @@
 <header class="navbar navbar-expand-lg bg-dark">
   <a class="navbar-brand text-light" href="home">
-    Whiteboard
-  </a>  <ul class="navbar-nav ml-auto">
+    Whiteboard <i class="fas fa-home"></i>
+  </a>
+  <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <a class="btn btn-link nav-link nav-item-link" routerLink="/profile">
         Profile<i class="fas fa-user"></i></a>
     </li>
     <li class="nav-item">
-      <a class="btn btn-link nav-link nav-item-link text-light" (click)="logout()">Logout<i class="fas fa-sign-out-alt"></i></a>
+      <a class="btn btn-link nav-link nav-item-link text-light" (click)="logout()">Logout<i
+        class="fas fa-sign-out-alt"></i></a>
     </li>
   </ul>
 </header>
+<h2>Admin</h2>
 <div class="row">
-  <div class="col-md-12">
-    <h2>Admin</h2>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12 pl-1 pb-5">
-    <div class="d-flex flex-row bg-dark justify-content-start">
-      <div class="p-3" *ngFor="let course of allCourses">
-        <a class="font-weight-bold text-light" [ngClass]="{'text-muted text-capitalize':course.id == courseId}"
-           (click)="loadSections(course.id)">
-          {{course.title}}
-        </a>
-      </div>
-    </div>
+  <div class="col-2">
+    <ul class="list-group">
+      <li *ngFor="let course of allCourses"
+          [ngClass]="{'active':course.id == courseId}"
+          (click)="loadSections(course.id)"
+          class="active list-group-item">
+        {{course.title}}
+      </li>
+    </ul>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-6" *ngIf="courseId < 0">
-        <h3>Select a course from above to create sections</h3>
+        <h3>Select a course from the left to create/update sections</h3>
       </div>
       <div class="col-md-6" *ngIf="courseId >= 0">
-        <div class="card">
+        <div class="card bg-light mb-3">
           <div class="card-header"><h4 class="p-1">{{selectedCourse.title}}</h4></div>
-          <div class="card-title my-auto mx-3"><h5 class="p-2">Available Sections ({{sections.length}})</h5></div>
+          <div class="card-title my-auto mx-3">
+            <h5 class="p-2">Sections: ({{sections.length}})</h5>
+          </div>
           <div class="card-body">
-            <ul class="list-group" *ngFor="let section of sections">
+            <ul class="list-group"
+                *ngFor="let section of sections">
               <li class="list-group-item">
-                <a class="text-dark" (click)="selectSection(section)"><span
-                  class="font-weight-bold">{{section.name}}</span></a>
+                <a class="text-dark" (click)="selectSection(section)">
+                  {{section.name}}
+                </a>
               </li>
             </ul>
           </div>
           <div class="card-footer">
-            <button class="btn btn-dark btn-block" (click)="createSection()">Add Section</button>
+            <button class="btn btn-warning"
+                    (click)="createSection()">
+              Add Section
+            </button>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="container">
           <div class="card">
-            <div class="card-title"><h5 class="p-2 text-center">{{sectionName}}</h5></div>
+            <div class="card-header"><h5 class="p-2 text-center">{{sectionName}}</h5></div>
             <div class="card-body">
-              <input [(ngModel)]="sectionName"
-                     placeholder="Section Name"
-                     class="form-control p-2"/>
-              <input [(ngModel)]="seats"
-                     placeholder="Total Capacity"
-                     class="form-control p-2"/>
+              <div class="form-group">
+                <input [(ngModel)]="sectionName"
+                       placeholder="Section Name"
+                       class="form-control p-2"/>
+              </div>
+              <div class="form-group">
+                <input [(ngModel)]="seats"
+                       placeholder="Total Capacity"
+                       class="form-control p-2"/>
+              </div>
             </div>
             <div class="card-footer">
               <div class="row">
                 <div class="col-md-6">
-                  <button (click)="updateSection(sectionName, seats)" class="btn btn-success btn-block">
+                  <button (click)="updateSection(sectionName, seats)"
+                          class="btn btn-success">
                     Update
                   </button>
                 </div>
                 <div class="col-md-6">
-                  <button (click)="deleteSection()" class="btn btn-danger btn-block">
-                    <i class="fa fa-trash p-1"></i>Delete
+                  <button (click)="deleteSection()"
+                          class="btn btn-danger">
+                    Delete
                   </button>
                 </div>
               </div>

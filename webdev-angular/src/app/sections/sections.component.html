@@ -3,29 +3,31 @@
     Whiteboard</a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-      <a class="nav-link text-light disabled"><h4 class="m-0">{{course.title}}</h4></a>
-    </li>
-    <li class="nav-item">
       <a class="btn btn-link nav-link nav-item-link" (click)="logout()">Logout<i class="fas fa-sign-out-alt"></i></a>
     </li>
   </ul>
 </header>
+<h2>Sections for {{course.title}}</h2>
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4">
       <div class="container mt-4" [hidden]="!isAdmin">
         <div class="row">
           <div class="col-md-12">
-            <input [(ngModel)]="sectionName"
-                   placeholder="Section Name"
-                   class="form-control">
+            <div class="form-group">
+              <input [(ngModel)]="sectionName"
+                     placeholder="Section Name"
+                     class="form-control">
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <input [(ngModel)]="seats"
-                   placeholder="Seats available"
-                   class="form-control">
+            <div class="form-group">
+              <input [(ngModel)]="seats"
+                     placeholder="Seats available"
+                     class="form-control">
+            </div>
           </div>
         </div>
         <div class="row">
@@ -48,7 +50,7 @@
             </button>
             <button [hidden]="isAdmin" (click)="deEnroll(section)"
                     class="float-right btn btn-danger"
-                    [ngClass]="{'disabled': section.availableSeats == section.seats}">Deroll
+                    [ngClass]="{'disabled': section.availableSeats == section.seats}">De-enroll
             </button>
           </li>
         </ul>

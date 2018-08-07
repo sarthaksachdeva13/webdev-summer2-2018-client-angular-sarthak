@@ -85,7 +85,7 @@ export class SectionsComponent implements OnInit {
             console.log('user: ' + user.username);
           }
         } else {
-          this.router.navigate(['register']);
+          this.router.navigate(['login']);
         }
       });
   }

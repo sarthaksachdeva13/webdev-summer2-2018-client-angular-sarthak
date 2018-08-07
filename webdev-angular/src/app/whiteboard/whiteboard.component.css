@@ -1,9 +1,18 @@
-a.nav-item-link, a {
-  color: white;
-}
 
 
 .fas
 {
   margin-left: 5px;
+}
+a.nav-item-link {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover.nav-item-link {
+  color: white;
+  cursor: pointer;
 }
