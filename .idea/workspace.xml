@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1037e043-d6ab-416b-9162-05957a94a61c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,7 +58,7 @@
           <entry key="css" value="1095" />
           <entry key="html" value="2796" />
           <entry key="js" value="18" />
-          <entry key="json" value="19" />
+          <entry key="json" value="22" />
           <entry key="ts" value="2703" />
         </counts>
       </usages-collector>
@@ -64,7 +66,7 @@
         <counts>
           <entry key="CSS" value="1095" />
           <entry key="HTML" value="2796" />
-          <entry key="JSON" value="19" />
+          <entry key="JSON" value="22" />
           <entry key="JavaScript" value="18" />
           <entry key="TypeScript" value="2703" />
         </counts>
@@ -103,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="332">
+              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -127,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/webdev-angular/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -323,12 +325,12 @@
       <workItem from="1533155107619" duration="7290000" />
       <workItem from="1533303254007" duration="2000" />
       <workItem from="1533313405801" duration="15692000" />
-      <workItem from="1533420570098" duration="56996000" />
+      <workItem from="1533420570098" duration="57307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79980000" />
+    <option name="totallyTimeSpent" value="80291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="0" />
@@ -715,7 +717,7 @@
     <entry file="file://$PROJECT_DIR$/webdev-angular/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -728,8 +730,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="332">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
         </state>
       </provider>
     </entry>
