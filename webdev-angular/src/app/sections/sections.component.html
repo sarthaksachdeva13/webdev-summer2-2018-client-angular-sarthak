@@ -48,7 +48,8 @@
           <li *ngFor="let section of sections" class="list-group-item">
             {{section.name}} ({{section.availableSeats}}/{{section.seats}})
             <button [hidden]="isAdmin" (click)="enroll(section)"
-                    class="float-right btn btn-success ml-2 pl-2" [ngClass]="{'disabled': section.availableSeats == 0}">
+                    class="float-right btn btn-success ml-2 pl-2"
+                    [ngClass]="{'disabled': section.availableSeats == 0}">
               Enroll
             </button>
             <button [hidden]="isAdmin" (click)="deEnroll(section)"

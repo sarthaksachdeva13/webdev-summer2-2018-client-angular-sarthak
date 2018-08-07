@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1037e043-d6ab-416b-9162-05957a94a61c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/course-grid/course-grid.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/module-list/module-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/module-list/module-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdev-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,32 +37,40 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="69" />
-          <entry key="html" value="115" />
-          <entry key="js" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="116" />
+          <entry key="js" value="2" />
+          <entry key="json" value="1" />
           <entry key="rnc" value="1" />
-          <entry key="ts" value="174" />
+          <entry key="ts" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="69" />
-          <entry key="HTML" value="115" />
-          <entry key="JavaScript" value="1" />
+          <entry key="HTML" value="116" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="RNG Compact" value="1" />
-          <entry key="TypeScript" value="174" />
+          <entry key="TypeScript" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1080" />
-          <entry key="html" value="2667" />
+          <entry key="css" value="1095" />
+          <entry key="html" value="2796" />
+          <entry key="js" value="18" />
+          <entry key="json" value="19" />
           <entry key="ts" value="2703" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1080" />
-          <entry key="HTML" value="2667" />
+          <entry key="CSS" value="1095" />
+          <entry key="HTML" value="2796" />
+          <entry key="JSON" value="19" />
+          <entry key="JavaScript" value="18" />
           <entry key="TypeScript" value="2703" />
         </counts>
       </usages-collector>
@@ -78,48 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="5" column="75" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="75" />
+            <state relative-caret-position="885">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/widget-list/widget-list.component.html">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/admin/admin.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/topic-pills/topic-pills.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/widget-list/widget-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/widget-list/widget-list.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="660">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -127,29 +99,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+            <state relative-caret-position="265">
+              <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.routing.ts">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="735">
+              <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="167">
+              <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -158,19 +159,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css">
+        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="110">
+              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,6 +183,7 @@
     <findStrings>
       <find>console</find>
       <find>isEnrolled</find>
+      <find>engines1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,9 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.ts" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/models/course.model.client.ts" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/models/user.model.client.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.ts" />
@@ -243,10 +236,13 @@
         <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.css" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/register/register.component.html" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/register/register.component.css" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css" />
         <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html" />
-        <option value="$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts" />
+        <option value="$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html" />
+        <option value="$PROJECT_DIR$/webdev-angular/package.json" />
+        <option value="$PROJECT_DIR$/webdev-angular/.gitignore" />
+        <option value="$PROJECT_DIR$/webdev-angular/server.js" />
       </list>
     </option>
   </component>
@@ -290,43 +286,6 @@
               <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
               <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
-              <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
-              <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
-              <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
-              <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webdev-summer2-2018-client-angular-sarthak" type="462c0819:PsiDirectoryNode" />
-              <item name="webdev-angular" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="topic-pills" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -369,22 +328,22 @@
       <workItem from="1533155107619" duration="7290000" />
       <workItem from="1533303254007" duration="2000" />
       <workItem from="1533313405801" duration="15692000" />
-      <workItem from="1533420570098" duration="53564000" />
+      <workItem from="1533420570098" duration="56923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76548000" />
+    <option name="totallyTimeSpent" value="79907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="811" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2840028" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2840028" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32962447" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962447" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -393,7 +352,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.36856747" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36856747" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32962447" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -412,45 +371,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/whiteboard/whiteboard.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/register/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/enrollment/enrollment.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-navigator/course-navigator.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/course-viewer/course-viewer.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -589,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/admin/admin.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -676,16 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -707,24 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -756,41 +645,96 @@
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/topic-pills/topic-pills.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="6" selection-end-column="27" />
+          <caret line="6" column="27" selection-start-line="3" selection-start-column="6" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="34" />
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="34" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html">
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="5" column="75" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="75" />
+        <state relative-caret-position="192">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="265">
+          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/admin/admin.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/profile/profile.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="167">
+          <caret line="108" column="24" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/services/section.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/src/app/sections/sections.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webdev-angular/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>

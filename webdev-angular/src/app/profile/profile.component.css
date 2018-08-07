@@ -11,6 +11,9 @@ a:hover.nav-item-link{
   cursor: pointer;
 }
 
+.adminColumnTwo{
+  margin-top: 200px;
+}
 h2 {
   font-size: 40px;
   font-family: 'Poiret One', cursive;

@@ -91,7 +91,11 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 adminColumnTwo" [hidden]="!isAdmin">
+      <h2>Welcome Admin</h2>
+      <h2>Please edit Sections from Navbar</h2>
+    </div>
+    <div class="col-lg-6" [hidden]="isAdmin">
       <div class="container-fluid courseContainer">
         <div class="row col-lg-12 mb-4">
           <h2>You're enrolled in :</h2>
