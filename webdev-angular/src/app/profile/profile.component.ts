@@ -19,7 +19,6 @@ export class ProfileComponent implements OnInit {
 
   id;
   isAdmin;
-  isEnrolled;
   username;
   password;
   firstName;
@@ -39,7 +38,6 @@ export class ProfileComponent implements OnInit {
   };
 
   sections = [];
-  enrolledCourses = [];
 
   validateField(field) {
     return field !== undefined && field !== '';
@@ -80,8 +78,6 @@ export class ProfileComponent implements OnInit {
           }
         )
       ;
-    } else {
-      alert('Please fill out all fields');
     }
   }
 
@@ -111,31 +107,12 @@ export class ProfileComponent implements OnInit {
 
     this.sectionService
       .findSectionsForStudent()
-      .then(sections => this.sections = sections)
-      .then((sections) => (
-        this.extractAllCourseIdsFromSections()
-      )).then((courseIds) => {
-      this.courseService.findEnrolledCoursesForStudent(courseIds)
-        .then(courses => {
-          this.enrolledCourses = courses;
-          if (this.enrolledCourses.length > 0) {
-            this.isEnrolled = true;
-          }
-          console.log(courses);
-        });
-    });
+      .then(sections => this.sections = sections);
+
     this.userService.authenticate()
       .then(response => {
         this.isAdmin = response.username !== undefined && response.username === 'admin';
       });
-  }
-
-  extractAllCourseIdsFromSections() {
-    let courseIds = [];
-    courseIds = this.sections.map(value => {
-      return value.section.courseId;
-    });
-    return courseIds;
   }
 
 }

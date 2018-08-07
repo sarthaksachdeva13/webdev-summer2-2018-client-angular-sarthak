@@ -36,14 +36,9 @@ h2 {
 }
 
 .courseContainer{
-  margin-top : 20px;
-  margin-bottom : 4px;
-  margin-left: 200px;
-
+  margin: 20px 50px 4px 200px;
 }
 
-
-.pageContainer
-{
-  /*background: url("http://blog.somethingpeach.com/wp-content/uploads/wallpaper_007_2560x1440.jpg");*/
+.list-group-item{
+  margin-right:20px;
 }

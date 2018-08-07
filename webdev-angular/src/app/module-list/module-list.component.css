@@ -28,3 +28,12 @@ a {
   color: rgb(128,0,0);
   font-weight: bold;
 }
+
+a.nav-item-link {
+  color: white;
+}
+
+a:hover.nav-item-link{
+  color: white;
+  cursor: pointer;
+}

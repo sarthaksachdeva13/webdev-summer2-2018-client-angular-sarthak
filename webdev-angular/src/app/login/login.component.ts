@@ -14,14 +14,14 @@ export class LoginComponent implements OnInit {
 
   login(username, password) {
     console.log([username, password]);
-    this.service
+    this.userService
       .login(username, password)
       .then(user =>
         this.router.navigate(['profile']), response => alert('Not found!'));
   }
 
   constructor(private router: Router,
-              private service: UserServiceClient) {
+              private userService: UserServiceClient) {
   }
 
   ngOnInit() {
