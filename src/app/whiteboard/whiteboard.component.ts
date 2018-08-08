@@ -12,23 +12,17 @@ export class WhiteboardComponent implements OnInit {
 
   isLoggedIn = false;
 
-  constructor(private service: UserServiceClient, private router: Router) {
+  constructor(private userService: UserServiceClient, private router: Router) {
   }
 
-  logout() {
-    this.service.logout()
-      .then(() =>
-        this.router.navigate(['login']));
-  }
+  logout = () =>
+    this.userService.logout()
+      .then(() => this.router.navigate(['login']))
 
   ngOnInit() {
-    this.service.authenticate()
+    this.userService.authenticate()
       .then(response => {
-        if (response.username !== undefined && response.username !== '') {
-          this.isLoggedIn = true;
-        } else {
-          this.isLoggedIn = false;
-        }
+        this.isLoggedIn = response.username !== undefined && response.username !== '';
       });
   }
 }

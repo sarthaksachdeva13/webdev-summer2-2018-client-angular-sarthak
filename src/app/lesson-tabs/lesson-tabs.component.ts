@@ -37,11 +37,9 @@ export class LessonTabsComponent implements OnInit {
   }
 
 
-  logout() {
+  logout = () =>
     this.userService.logout()
-      .then(() =>
-        this.router.navigate(['login']));
-  }
+      .then(() => this.router.navigate(['login']))
 
   ngOnInit() {
   }

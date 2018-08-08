@@ -24,11 +24,10 @@ export class WidgetListComponent implements OnInit {
     this.loadWidgets(this.topicId);
   }
 
-  loadWidgets(topicId) {
+  loadWidgets = topicId =>
     this.service.findWidgetsForTopic(topicId)
-      .then(widgets => this.widgets = widgets);
+      .then(widgets => this.widgets = widgets)
 
-  }
 
   ngOnInit() {
   }

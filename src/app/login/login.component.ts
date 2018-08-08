@@ -12,13 +12,10 @@ export class LoginComponent implements OnInit {
   username;
   password;
 
-  login(username, password) {
-    console.log([username, password]);
-    this.userService
-      .login(username, password)
-      .then(user =>
-        this.router.navigate(['profile']), response => alert('Not found!'));
-  }
+  login = (username, password) => this.userService
+    .login(username, password)
+    .then(user => this.router.navigate(['profile']), () => alert('Not found!'))
+
 
   constructor(private router: Router,
               private userService: UserServiceClient) {

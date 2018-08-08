@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CourseServiceClient} from '../services/course.service.client';
 import {SectionServiceClient} from '../services/section.service.client';
 import {Course} from '../models/course.model.client';
@@ -34,7 +34,6 @@ export class AdminComponent implements OnInit {
       .then(sections => this.sections = sections)
       .then(() => this.courseService.findCourseById(courseId))
       .then(course => {
-        console.log(course);
         this.selectedCourse = course;
       });
   }
@@ -44,9 +43,6 @@ export class AdminComponent implements OnInit {
     this.sectionName = section.name;
     this.seats = section.seats;
     this.sectionId = section._id;
-    console.log(this.sectionId);
-    console.log(this.selectedSection);
-
   }
 
   logout() {
@@ -66,7 +62,6 @@ export class AdminComponent implements OnInit {
       if (selectedCourse !== undefined) {
         const sectionName = selectedCourse.title + ' Section 1';
         const seats = 20;
-        console.log(sectionName);
         this
           .sectionsService
           .createSection(this.courseId, sectionName, seats)
@@ -95,7 +90,6 @@ export class AdminComponent implements OnInit {
       name: sectionName,
       seats: seats,
     };
-    console.log(section);
     this.sectionsService.updateSection(section, this.sectionId, this.courseId)
       .then(section => {
         this.sectionName = section.name;
@@ -106,10 +100,6 @@ export class AdminComponent implements OnInit {
 
   ngOnInit() {
     this.courseService.findAllCourses()
-      .then(courses => {
-        this.allCourses = courses;
-        console.log(courses);
-      });
+      .then(courses => this.allCourses = courses);
   }
-
 }

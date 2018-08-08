@@ -3,12 +3,6 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class SectionServiceClient {
 
-  enroll = sectionId =>
-    fetch('https://sarthakwebdevnode.herokuapp.com/api/section/' + sectionId + '/enroll', {
-      method: 'put',
-      credentials: 'include'
-    })
-
 
   deEnroll = sectionId =>
     fetch('https://sarthakwebdevnode.herokuapp.com/api/section/' + sectionId + '/deRegister', {

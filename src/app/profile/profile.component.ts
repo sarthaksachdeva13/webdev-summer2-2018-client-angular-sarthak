@@ -81,11 +81,10 @@ export class ProfileComponent implements OnInit {
     }
   }
 
-  logout() {
-    this.userService.logout()
-      .then(() =>
-        this.router.navigate(['login']));
-  }
+
+  logout = () => this.userService.logout()
+    .then(() => this.router.navigate(['login']))
+
 
   ngOnInit() {
     this

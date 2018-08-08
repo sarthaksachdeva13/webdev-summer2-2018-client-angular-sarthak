@@ -19,9 +19,8 @@ export class RegisterComponent implements OnInit {
   constructor(private router: Router, private userService: UserServiceClient) {
   }
 
-  validatePassword(password2) {
-    this.invalid = !this.password.includes(password2);
-  }
+  validatePassword = (password2) =>
+    this.invalid = !this.password.includes(password2)
 
   register(username, password, password2) {
     if (password === password2) {

@@ -27,10 +27,9 @@ export class SectionsComponent implements OnInit {
   sections = [];
   course = new Course();
 
-  findCourseById(courseId) {
+  findCourseById = courseId =>
     this.courseService.findCourseById(courseId)
-      .then(course => this.course = course);
-  }
+      .then(course => this.course = course)
 
   loadSections(courseId) {
     this.courseId = courseId;
@@ -41,11 +40,9 @@ export class SectionsComponent implements OnInit {
       .then(() => this.findCourseById(courseId));
   }
 
-  logout() {
+  logout = () =>
     this.authService.logout()
-      .then(() =>
-        this.router.navigate(['login']));
-  }
+      .then(() => this.router.navigate(['login']))
 
   createSection(sectionName, seats) {
     if (sectionName === '' && this.course !== undefined) {
@@ -62,19 +59,13 @@ export class SectionsComponent implements OnInit {
       });
   }
 
-  enroll(section) {
-    this.sectionService
-      .enrollStudentInSection(section._id)
-      .then(() => (
-        this.loadSections(this.courseId)));
-  }
+  enroll = section =>
+    this.sectionService.enrollStudentInSection(section._id)
+      .then(() => (this.loadSections(this.courseId)))
 
-  deEnroll(section) {
-    console.log(section);
+  deEnroll = section =>
     this.sectionService.deEnroll(section._id)
-      .then(() => (
-        this.loadSections(this.courseId)));
-  }
+      .then(() => (this.loadSections(this.courseId)))
 
   ngOnInit() {
     this.authService.authenticate()

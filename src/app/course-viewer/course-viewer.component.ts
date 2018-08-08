@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {CourseServiceClient} from '../services/course.service.client';
 import {Course} from '../models/course.model.client';
@@ -21,16 +21,13 @@ export class CourseViewerComponent implements OnInit {
 
   course: Course = new Course();
 
-  loadCourse(courseId) {
+  loadCourse = courseId =>
     this.courseService.findCourseById(courseId)
-      .then(course => this.course = course);
-  }
+      .then(course => this.course = course)
 
-  logout() {
+  logout = () =>
     this.userService.logout()
-      .then(() =>
-        this.router.navigate(['login']));
-  }
+      .then(() => this.router.navigate(['login']))
 
   ngOnInit() {
   }
