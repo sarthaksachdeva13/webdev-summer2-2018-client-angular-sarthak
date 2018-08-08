@@ -1,14 +1,14 @@
 {
-  "name": "webdev-angular",
+  "name": "webdev-summer2-2018-client-angular-sarthak",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
