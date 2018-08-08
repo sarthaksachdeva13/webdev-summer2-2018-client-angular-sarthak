@@ -12,6 +12,8 @@ app.get('/*', function(req,res) {
   res.sendFile(path.join(__dirname,'/dist/webdev-summer2-2018-client-angular-sarthak/index.html'));
 });
 
+console.log("PORT " , process.env.PORT);
+
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 5000);
 

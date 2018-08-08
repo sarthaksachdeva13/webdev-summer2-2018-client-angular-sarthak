@@ -4,6 +4,6 @@ import {Injectable} from '@angular/core';
 export class ModuleServiceClient {
 
   findModulesForCourse = courseId =>
-    fetch('http://localhost:8080/api/course/CID/module'.replace('CID', courseId))
+    fetch('https://sarthakwebdev.herokuapp.com/api/course/CID/module'.replace('CID', courseId))
       .then(response => response.json())
 }
