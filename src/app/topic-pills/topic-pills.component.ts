@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 import {TopicServiceClient} from '../services/topic.service.client';
 
 @Component({
@@ -10,7 +10,8 @@ import {TopicServiceClient} from '../services/topic.service.client';
 export class TopicPillsComponent implements OnInit {
 
   constructor(private service: TopicServiceClient,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private router: Router) {
     this.route.params.subscribe(
       params => this.setParams(params));
   }
@@ -26,13 +27,17 @@ export class TopicPillsComponent implements OnInit {
     this.moduleId = params['moduleId'];
     this.lessonId = params['lessonId'];
     this.topicId = params['topicId'];
-    this.loadTopics(this.courseId, this.moduleId,this.lessonId);
+    this.loadTopics(this.courseId, this.moduleId, this.lessonId);
   }
 
   loadTopics(courseId, moduleId, lessonId) {
     this.lessonId = lessonId;
     this.service.findAllTopicsForLesson(courseId, moduleId, lessonId)
       .then(topics => this.topics = topics);
+  }
+
+  getQuizzesForTopic() {
+    this.router.navigate(['/quizzes', {topicId: this.topicId}]);
   }
 
   ngOnInit() {

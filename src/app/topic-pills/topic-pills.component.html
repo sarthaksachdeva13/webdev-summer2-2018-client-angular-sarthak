@@ -7,6 +7,13 @@
         {{topic.title}}</a>
     </div>
   </div>
+  <div>
+    <button *ngIf="this.topicId"
+            class="btn btn-primary"
+            (click)="getQuizzesForTopic()">
+      View Quizzes
+    </button>
+  </div>
   <div class="row widgetClass">
     <div class="col-md-12">
       <app-widget-list></app-widget-list>
