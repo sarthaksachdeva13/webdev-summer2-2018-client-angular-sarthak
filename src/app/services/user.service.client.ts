@@ -19,7 +19,6 @@ export class UserServiceClient {
     });
   }
 
-
   updateUser = user =>
     fetch('https://sarthakwebdevnode.herokuapp.com/api/user/update', {
       method: 'PUT',

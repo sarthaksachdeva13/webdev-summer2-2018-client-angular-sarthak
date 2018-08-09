@@ -7,6 +7,10 @@ import {SectionsComponent} from './sections/sections.component';
 import {CourseViewerComponent} from './course-viewer/course-viewer.component';
 import {WhiteboardComponent} from './whiteboard/whiteboard.component';
 import {AdminComponent} from './admin/admin.component';
+import {QuizListComponent} from './quiz-list/quiz-list.component';
+import {QuizTakerComponent} from './quiz-taker/quiz-taker.component';
+import {QuizSubmissionsComponent} from './quiz-submissions/quiz-submissions.component';
+import {QuizAnswersComponent} from './quiz-answers/quiz-answers.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,6 +21,10 @@ const appRoutes: Routes = [
   {path: 'course/:courseId/module/:moduleId/lesson/:lessonId', component: CourseViewerComponent},
   {path: 'course/:courseId/module/:moduleId/lesson/:lessonId/topic/:topicId', component: CourseViewerComponent},
   {path: 'course/:courseId/section', component: SectionsComponent},
+  {path: 'quizzes', component: QuizListComponent},
+  {path: 'quiz/:quizId', component: QuizTakerComponent},
+  {path: 'quiz/:quizId/submissions', component: QuizSubmissionsComponent},
+  {path: 'quiz/:quizId/submission/:submissionId', component: QuizAnswersComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'admin/course/:courseId', component: AdminComponent},
   {path: 'login', component: LoginComponent},

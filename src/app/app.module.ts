@@ -24,6 +24,10 @@ import {TopicServiceClient} from './services/topic.service.client';
 import {WidgetListComponent} from './widget-list/widget-list.component';
 import {WidgetServiceClient} from './services/widget.service.client';
 import {AdminComponent} from './admin/admin.component';
+import { QuizListComponent } from './quiz-list/quiz-list.component';
+import { QuizTakerComponent } from './quiz-taker/quiz-taker.component';
+import { QuizSubmissionsComponent } from './quiz-submissions/quiz-submissions.component';
+import { QuizAnswersComponent } from './quiz-answers/quiz-answers.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,11 @@ import {AdminComponent} from './admin/admin.component';
     LessonTabsComponent,
     TopicPillsComponent,
     WidgetListComponent,
-    AdminComponent
+    AdminComponent,
+    QuizListComponent,
+    QuizTakerComponent,
+    QuizSubmissionsComponent,
+    QuizAnswersComponent
   ],
   imports: [
     BrowserModule,
