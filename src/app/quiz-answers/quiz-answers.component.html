@@ -1,3 +1,10 @@
-<p>
-  quiz-answers works!
-</p>
+<div class="container-fluid">
+  <h2>{{quiz.username}}'s Submission</h2>
+  <ul class="list-group">
+    <li *ngFor="let question of questions" class="list-group-item mb-2">
+      <h4>{{question.title}} || Points : {{question.points}}</h4>
+      {{quiz.answers[question.id]}}
+    </li>
+  </ul>
+  <button class="btn btn-danger" (click)="backToSubmissions()">Go Back</button>
+</div>
