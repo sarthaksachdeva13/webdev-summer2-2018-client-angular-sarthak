@@ -1,3 +1,56 @@
-<p>
-  quiz-taker works!
-</p>
+<div class="container-fluid">
+  <h2>{{quiz.name}}</h2>
+  <ul class="list-group">
+    <li *ngFor="let question of questions" class="list-group-item mb-2">
+      <div [ngSwitch]="toggleQuestionType(question)">
+        <div *ngSwitchCase="'essay'">
+          <h3>{{question.title}}</h3>
+          <p>{{question.description}}</p>
+          <textarea [(ngModel)]='submission[question.id]'
+                    class="form-control"
+                    rows="4"
+                    cols="50">
+
+          </textarea>
+        </div>
+        <div *ngSwitchCase="'trueFalse'">
+          <h3>{{question.title}}</h3>
+          <p>{{question.description}}</p>
+          <div class="form-group">
+            <div class="radio" *ngFor="let item of trueFalse">
+              <label>
+                <input type="radio"
+                       name="tfQuestion"
+                       value="{{item}}"
+                       [(ngModel)]='submission[question.id]'>
+                {{item}}
+              </label>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'multipleChoice'">
+          <h3>{{question.title}}</h3>
+          <p>{{question.description}}</p>
+          <div class="form-group">
+            <div class="radio"
+                 *ngFor="let item of question.options.split('\n')">
+              <label>
+                <input type="radio"
+                       name="mcQuestion"
+                       value="{{item}}"
+                       [(ngModel)]='submission[question.id]'>
+                {{item}}
+              </label>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchCase="'fillInBlanks'">
+          <h3>{{question.title}}</h3>
+          <div [innerHtml]="determineBlanksQuestion(question) | noSanitize"></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <button class="btn btn-danger" (click)="cancel()">Cancel</button>
+  <button class="btn btn-success ml-2" (click)="submit(submission)">Submit</button>
+</div>

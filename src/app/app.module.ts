@@ -29,6 +29,8 @@ import { QuizTakerComponent } from './quiz-taker/quiz-taker.component';
 import { QuizSubmissionsComponent } from './quiz-submissions/quiz-submissions.component';
 import { QuizAnswersComponent } from './quiz-answers/quiz-answers.component';
 import {QuizServiceClient} from './services/quiz.service.client';
+import {FilterPipe} from './filter.pipe';
+import {NoSanitizePipe} from './noSanitize.pipe';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import {QuizServiceClient} from './services/quiz.service.client';
     QuizListComponent,
     QuizTakerComponent,
     QuizSubmissionsComponent,
-    QuizAnswersComponent
+    QuizAnswersComponent,
+    FilterPipe,
+    NoSanitizePipe
   ],
   imports: [
     BrowserModule,
@@ -68,5 +72,6 @@ import {QuizServiceClient} from './services/quiz.service.client';
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }

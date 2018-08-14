@@ -21,7 +21,6 @@ export class QuizListComponent implements OnInit {
   quizzes = [];
   topicId;
 
-
   logout = () => this.userService.logout()
     .then(() => this.router.navigate(['login']))
 
@@ -32,7 +31,7 @@ export class QuizListComponent implements OnInit {
       .then(quizzes => this.quizzes = quizzes);
 
     this.router.navigateByUrl('/quizzes');
-    console.log(this.quizzes);
+
   }
 
   setParams(params) {
