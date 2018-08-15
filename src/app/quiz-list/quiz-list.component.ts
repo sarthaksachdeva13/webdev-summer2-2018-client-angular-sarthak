@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {QuizServiceClient} from '../services/quiz.service.client';
 import {Quiz} from '../models/quiz.model.client';
 import {UserServiceClient} from '../services/user.service.client';
-import { Router} from '@angular/router';
+import {Router} from '@angular/router';
 
 
 @Component({

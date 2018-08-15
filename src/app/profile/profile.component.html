@@ -5,7 +5,7 @@
       <a class="btn btn-link nav-link nav-item-link" routerLink="/admin">Edit Sections<i class="fas fa-edit"></i>
       </a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" [hidden]="isAdmin">
       <a class="btn btn-link nav-link nav-item-link" routerLink="/quizzes">Quizzes<i class="fas fa-clipboard-list"></i></a>
     </li>
     <li class="nav-item">

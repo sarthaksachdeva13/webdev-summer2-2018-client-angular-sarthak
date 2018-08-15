@@ -1,0 +1,30 @@
+h2 {
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(102,51,153);
+}
+
+
+.fas{
+  margin-left: 10px;
+}
+
+
+a.nav-item-link {
+  color: white;
+}
+
+a:hover.nav-item-link{
+  color: white;
+  cursor: pointer;
+}
+
+
+.btn
+{
+  border-radius: 18px;
+  margin : 5px;
+}

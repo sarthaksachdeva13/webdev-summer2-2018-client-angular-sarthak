@@ -15,8 +15,7 @@
   <ul class="list-group">
     <li *ngFor="let quiz of quizzes" class="list-group-item">
       {{quiz.title}}
-      <a class="float-right btn btn-primary" routerLink="/quiz/{{quiz._id}}">Take Quiz</a>
-      <a class="float-right btn btn-primary" routerLink="/quiz/{{quiz._id}}/submissions">Submissions</a>
-    </li>
+      <a class="float-right btn btn-warning" routerLink="/quiz/{{quiz._id}}/submissions">Submissions</a>
+      <a class="float-right btn btn-success" routerLink="/quiz/{{quiz._id}}">Take Quiz</a></li>
   </ul>
 </div>

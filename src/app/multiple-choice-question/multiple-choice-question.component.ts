@@ -14,11 +14,14 @@ export class MultipleChoiceQuestionComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.question);
   }
 
   selected(value) {
+    console.log(value);
     this.selectedChoiceValue = value;
     this.question.multipleChoiceAnswer = value;
+    console.log(this.question.multipleChoiceAnswer);
   }
 
 }
