@@ -6,15 +6,15 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./true-false-question.component.css']
 })
 export class TrueFalseQuestionComponent implements OnInit {
-  @Input() question
+  @Input() question;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  selected(selected) {
-    this.question.trueFalseAnswer = selected
-  }
+  selected = value =>
+    this.question.trueFalseAnswer = value
 
 }

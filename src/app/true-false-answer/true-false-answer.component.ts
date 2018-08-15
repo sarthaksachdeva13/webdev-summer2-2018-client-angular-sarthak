@@ -6,9 +6,10 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./true-false-answer.component.css']
 })
 export class TrueFalseAnswerComponent implements OnInit {
-  @Input() answer
+  @Input() answer;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

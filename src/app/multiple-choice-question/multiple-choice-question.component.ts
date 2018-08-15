@@ -6,22 +6,19 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./multiple-choice-question.component.css']
 })
 export class MultipleChoiceQuestionComponent implements OnInit {
-  @Input() question
+  @Input() question;
 
-  selectedChoiceValue
+  selectedChoiceValue;
 
   constructor() {
   }
 
   ngOnInit() {
-    console.log(this.question);
   }
 
-  selected(value) {
-    console.log(value);
+  selected = value => {
     this.selectedChoiceValue = value;
     this.question.multipleChoiceAnswer = value;
-    console.log(this.question.multipleChoiceAnswer);
   }
 
 }

@@ -6,11 +6,12 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./fill-blanks-question.component.css']
 })
 export class FillBlanksQuestionComponent implements OnInit {
-  @Input() question
+  @Input() question;
 
   constructor() { }
 
   ngOnInit() {
+    this.question.fillBlanksAnswers = {};
   }
 
 }
