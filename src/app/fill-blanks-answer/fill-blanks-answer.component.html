@@ -1,6 +1,6 @@
 <body>
 <h5>{{answer.description}}</h5>
-<span>Your answer: </span>
+<span id="answerText">Your answer: </span>
 <span [ngSwitch]="blank.indexOf('*')"
       *ngFor="let blank of answer.blanks">
   <span *ngSwitchCase="-1">{{blank}}</span>

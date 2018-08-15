@@ -14,7 +14,6 @@ export class TrueFalseQuestionComponent implements OnInit {
   ngOnInit() {
   }
 
-  selected = value =>
-    this.question.trueFalseAnswer = value
-
+  selected = trueOrFalse =>
+    this.question.trueFalseAnswer = trueOrFalse
 }
