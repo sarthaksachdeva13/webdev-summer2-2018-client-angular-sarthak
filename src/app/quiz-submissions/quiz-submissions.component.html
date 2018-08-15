@@ -1,33 +1,9 @@
-<div class="container-fluid">
-  <h2>Submissions</h2>
-
-  <label class="font-weight-bold mr-2 mb-4">Search by username</label>
-  <input [(ngModel)]="searchText"
-         placeholder="Enter username to search">
-
-  <table class="table table-bordered table-striped"
-         *ngIf="submissions.length > 0; else noSubmissions">
-    <tr>
-      <th scope="col">Username</th>
-      <th scope="col">Time Submitted</th>
-      <th scope="col">View Submission</th>
-    </tr>
-    <tr *ngFor="let submission of submissions | filter : searchText">
-      <td>
-        {{submission.username}}
-      </td>
-      <td>
-        {{submission.timeSubmitted | date:'medium'}}
-      </td>
-      <td>
-        <button (click)="viewQuizAnswers(submission._id)" class="btn btn-info">View</button>
-      </td>
-    </tr>
-  </table>
-  <a routerLink="/">Home</a>
-  <ng-template #noSubmissions>
-    <div>
-      There have been no submissions for this quiz yet.
-    </div>
-  </ng-template>
-</div>
+<body>
+<ul class="list-group">
+  <li class="list-group-item active">Submissions</li>
+  <li *ngFor="let submission of submissions" class="list-group-item">
+    Time: {{submission.submissionTime}}
+    <a class="float-right btn btn-primary" routerLink="/quiz/{{submission.quiz}}/submission/{{submission._id}}">View</a>
+  </li>
+</ul>
+</body>

@@ -36,10 +36,6 @@ export class TopicPillsComponent implements OnInit {
       .then(topics => this.topics = topics);
   }
 
-  getQuizzesForTopic() {
-    this.router.navigate(['/quizzes', {topicId: this.topicId}]);
-  }
-
   ngOnInit() {
   }
 

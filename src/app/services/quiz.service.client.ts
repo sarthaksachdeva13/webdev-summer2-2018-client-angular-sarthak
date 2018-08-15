@@ -1,41 +1,35 @@
+import {Injectable} from '@angular/core';
+
+@Injectable()
 export class QuizServiceClient {
 
-  loadSubmissions = qID =>
-    fetch('http://localhost:3000/api/quiz/' + qID + '/submissions')
+
+  findAllQuizzes = () =>
+    fetch('http://localhost:3000/api/quiz')
       .then(response => response.json())
 
+  findQuizById = qID =>
+    fetch('http://localhost:3000/api/quiz' + qID)
+      .then(response => response.json())
 
-  submitQuiz = (quiz, qID) =>
-    fetch('http://localhost:3000/api/quiz/' + qID, {
+  submitQuiz = quiz =>
+    fetch('http://localhost:3000/api/quiz' + quiz._id + '/submission', {
       method: 'post',
-      body: JSON.stringify(quiz),
       credentials: 'include',
       headers: {
         'content-type': 'application/json'
       }
+    }).then((response) => (response.json()))
+
+  getSubmissions = qID =>
+    fetch('http://localhost:3000/api/quiz' + qID + '/submission', {
+      credentials: 'include'
     }).then(response => response.json())
 
 
-  findQuizById = (qID) =>
-    fetch('http://localhost:8080/api/exam/' + qID)
-      .then(response => response.json())
-
-
-  findAllQuizzesForTopic = topicId =>
-    fetch('http://localhost:8080/api/topic/' + topicId + '/exam')
-      .then(response => response.json())
-
-
-  findAllQuestionsForQuiz = (qID) =>
-    fetch('http://localhost:8080/api/exam/' + qID + '/question')
-      .then(response => response.json())
-
-  findQuizAnswers = (qID, submissionId) =>
-    fetch('http://localhost:3000/api/quiz/' + qID + '/submission/' + submissionId, {
-      credentials: 'include',
-      headers: {
-        'content-type': 'application/json'
-      }
+  getSubmission = (qID, submissionId) =>
+    fetch('http://localhost:3000/api/quiz' + qID + '/submission' + submissionId, {
+      credentials: 'include'
     }).then(response => response.json())
 
 }

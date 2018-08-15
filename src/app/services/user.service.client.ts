@@ -9,7 +9,7 @@ export class UserServiceClient {
       username: username,
       password: password
     };
-    return fetch('https://sarthakwebdevnode.herokuapp.com/api/login', {
+    return fetch('http://localhost:3000/api/login', {
       method: 'post',
       credentials: 'include',
       headers: {
@@ -20,7 +20,7 @@ export class UserServiceClient {
   }
 
   updateUser = user =>
-    fetch('https://sarthakwebdevnode.herokuapp.com/api/user/update', {
+    fetch('http://localhost:3000/api/user/update', {
       method: 'PUT',
       credentials: 'include',
       body: JSON.stringify(user),
@@ -32,20 +32,20 @@ export class UserServiceClient {
 
 
   currentUser = () =>
-    fetch('https://sarthakwebdevnode.herokuapp.com/currentUser', {
+    fetch('http://localhost:3000/currentUser', {
       credentials: 'include'
     }).then(response => response.json())
 
 
   logout = () =>
-    fetch('https://sarthakwebdevnode.herokuapp.com/api/logout', {
+    fetch('http://localhost:3000/api/logout', {
       method: 'post',
       credentials: 'include'
     })
 
 
   profile = () =>
-    fetch('https://sarthakwebdevnode.herokuapp.com/api/profile', {
+    fetch('http://localhost:3000/api/profile', {
       credentials: 'include',
     }).then(response => response.json())
 
@@ -55,7 +55,7 @@ export class UserServiceClient {
       username: username,
       password: password
     };
-    return fetch('https://sarthakwebdevnode.herokuapp.com/api/user', {
+    return fetch('http://localhost:3000/api/user', {
       body: JSON.stringify(user),
       credentials: 'include',
       method: 'post',
@@ -66,7 +66,7 @@ export class UserServiceClient {
   }
 
   authenticate = () =>
-    fetch('https://sarthakwebdevnode.herokuapp.com/api/auth', {
+    fetch('http://localhost:3000/api/auth', {
       credentials: 'include'
     }).then(response => (response.json()))
 

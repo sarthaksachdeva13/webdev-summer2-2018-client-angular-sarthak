@@ -24,13 +24,19 @@ import {TopicServiceClient} from './services/topic.service.client';
 import {WidgetListComponent} from './widget-list/widget-list.component';
 import {WidgetServiceClient} from './services/widget.service.client';
 import {AdminComponent} from './admin/admin.component';
-import { QuizListComponent } from './quiz-list/quiz-list.component';
-import { QuizTakerComponent } from './quiz-taker/quiz-taker.component';
-import { QuizSubmissionsComponent } from './quiz-submissions/quiz-submissions.component';
-import { QuizAnswersComponent } from './quiz-answers/quiz-answers.component';
+import {QuizListComponent} from './quiz-list/quiz-list.component';
+import {QuizTakerComponent} from './quiz-taker/quiz-taker.component';
+import {QuizSubmissionsComponent} from './quiz-submissions/quiz-submissions.component';
+import {QuizAnswersComponent} from './quiz-answers/quiz-answers.component';
 import {QuizServiceClient} from './services/quiz.service.client';
-import {FilterPipe} from './filter.pipe';
-import {NoSanitizePipe} from './noSanitize.pipe';
+import {EssayQuestionComponent} from './essay-question/essay-question.component';
+import {EssayAnswerComponent} from './essay-answer/essay-answer.component';
+import {FillBlanksQuestionComponent} from './fill-blanks-question/fill-blanks-question.component';
+import {FillBlanksAnswerComponent} from './fill-blanks-answer/fill-blanks-answer.component';
+import {TrueFalseQuestionComponent} from './true-false-question/true-false-question.component';
+import {TrueFalseAnswerComponent} from './true-false-answer/true-false-answer.component';
+import {MultipleChoiceQuestionComponent} from './multiple-choice-question/multiple-choice-question.component';
+import {MultipleChoiceAnswerComponent} from './multiple-choice-answer/multiple-choice-answer.component';
 
 @NgModule({
   declarations: [
@@ -52,8 +58,14 @@ import {NoSanitizePipe} from './noSanitize.pipe';
     QuizTakerComponent,
     QuizSubmissionsComponent,
     QuizAnswersComponent,
-    FilterPipe,
-    NoSanitizePipe
+    EssayQuestionComponent,
+    EssayAnswerComponent,
+    FillBlanksQuestionComponent,
+    FillBlanksAnswerComponent,
+    TrueFalseQuestionComponent,
+    TrueFalseAnswerComponent,
+    MultipleChoiceQuestionComponent,
+    MultipleChoiceAnswerComponent
   ],
   imports: [
     BrowserModule,
@@ -75,3 +87,7 @@ import {NoSanitizePipe} from './noSanitize.pipe';
 
 export class AppModule {
 }
+
+
+
+

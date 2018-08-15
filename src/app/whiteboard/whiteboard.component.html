@@ -4,6 +4,9 @@
   </a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item" [hidden]="!isLoggedIn">
+      <a class="btn btn-link nav-link nav-item-link" routerLink="/quizzes">Quizzes<i class="fas fa-clipboard-list"></i></a>
+    </li>
+    <li class="nav-item" [hidden]="!isLoggedIn">
       <a class="btn btn-link nav-link nav-item-link" routerLink="/profile">Profile<i class="fas fa-user"></i></a>
     </li>
     <li class="nav-item" [hidden]="!isLoggedIn">

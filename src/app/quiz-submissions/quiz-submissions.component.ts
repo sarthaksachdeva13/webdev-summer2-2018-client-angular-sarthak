@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {QuizServiceClient} from '../services/quiz.service.client';
+import {Submission} from '../models/submission.model.client';
 
 @Component({
   selector: 'app-quiz-submissions',
@@ -10,28 +11,20 @@ import {QuizServiceClient} from '../services/quiz.service.client';
 export class QuizSubmissionsComponent implements OnInit {
 
   constructor(private service: QuizServiceClient,
-              private aRoute: ActivatedRoute,
-              private router: Router) {
-    this.aRoute.params.subscribe(params =>
-      this.loadSubmissions(params['quizId']));
+              private route: ActivatedRoute) {
+
+    this.route.params.subscribe(params => this.loadSubmissions(params['quizId']));
   }
 
-  quizId = '';
-  submissions = [];
+  submissions: Submission[] = [];
 
   loadSubmissions(quizId) {
-    this.quizId = quizId;
-    this.service.loadSubmissions(this.quizId)
+    this.service.getSubmissions(quizId)
       .then(submissions => this.submissions = submissions);
-  }
-
-  viewQuizAnswers(submissionId) {
-    this.router.navigateByUrl('/quiz/' + this.quizId + '/submission/' + submissionId);
   }
 
   ngOnInit() {
   }
-
 
 
 }

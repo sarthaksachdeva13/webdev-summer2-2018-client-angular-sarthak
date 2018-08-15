@@ -17,7 +17,7 @@ export class MultipleChoiceQuestionComponent implements OnInit {
   }
 
   selected(value) {
-    this.selectedChoiceValue = value
+    this.selectedChoiceValue = value;
     this.question.multipleChoiceAnswer = value;
   }
 

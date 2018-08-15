@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
 import {QuizServiceClient} from '../services/quiz.service.client';
+import {Quiz} from '../models/quiz.model.client';
 import {UserServiceClient} from '../services/user.service.client';
+import { Router} from '@angular/router';
 
 
 @Component({
@@ -11,31 +12,20 @@ import {UserServiceClient} from '../services/user.service.client';
 })
 export class QuizListComponent implements OnInit {
 
+  quizzes: Quiz[] = [];
+
   constructor(private quizService: QuizServiceClient,
-              private userService: UserServiceClient,
-              private route: ActivatedRoute,
-              private router: Router) {
-    this.route.params.subscribe(params => this.setParams(params));
+              private router: Router,
+              private authService: UserServiceClient) {
   }
 
-  quizzes = [];
-  topicId;
-
-  logout = () => this.userService.logout()
-    .then(() => this.router.navigate(['login']))
-
+  logout = () =>
+    this.authService.logout()
+      .then(() => this.router.navigate(['login']))
 
   ngOnInit() {
-
-    this.quizService.findAllQuizzesForTopic(this.topicId)
+    this.quizService.findAllQuizzes()
       .then(quizzes => this.quizzes = quizzes);
-
-    this.router.navigateByUrl('/quizzes');
-
-  }
-
-  setParams(params) {
-    this.topicId = params['topicId'];
   }
 
 }
