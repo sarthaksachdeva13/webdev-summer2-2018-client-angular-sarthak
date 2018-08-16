@@ -2,7 +2,7 @@
 <h5>{{answer.description}}</h5>
 <li class="list-group-item"
     *ngFor="let choice of answer.choices">
-  {{choice.choiceValue}}.{{choice.text}}
+  {{choice.choiceValue}}. {{choice.text}}
 </li>
 <p><span id="answerText">Your answer: </span>{{answer.multipleChoiceAnswer}}</p>
 </body>
