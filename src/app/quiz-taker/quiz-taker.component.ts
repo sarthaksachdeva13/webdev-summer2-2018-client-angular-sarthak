@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {QuizServiceClient} from '../services/quiz.service.client';
 import {Quiz} from '../models/quiz.model.client';
+import {UserServiceClient} from '../services/user.service.client';
 
 @Component({
   selector: 'app-quiz-taker',
@@ -12,7 +13,8 @@ export class QuizTakerComponent implements OnInit {
 
   constructor(private service: QuizServiceClient,
               private activatedRoute: ActivatedRoute,
-              private router: Router) {
+              private router: Router,
+              private authService: UserServiceClient) {
     this.activatedRoute.params.subscribe(params => this.quizId = params['quizId']);
   }
 
@@ -24,6 +26,10 @@ export class QuizTakerComponent implements OnInit {
     this.service.findQuizById(this.quizId)
       .then(quiz => this.quiz = quiz);
   }
+
+  logout = () =>
+    this.authService.logout()
+      .then(() => this.router.navigate(['login']))
 
   submitQuiz() {
     this.service.submitQuiz(this.quiz);
